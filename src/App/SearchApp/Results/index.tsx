@@ -72,7 +72,7 @@ export default function ScrollResults() {
         searchResults.length !== 0 &&
         searchResults.map(result => {
           return (
-            <Result key={result.id}>
+            <Result key={result.id} data-test-id="results">
               <ResultTitle>
                 {result.owner.login}/{result.name}
               </ResultTitle>

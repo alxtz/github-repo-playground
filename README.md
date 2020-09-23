@@ -16,6 +16,8 @@
       ![](https://i.imgur.com/6xY27mM.png)
 - [ ] The initial search would render the first 10 items of the collection, each time scrolling to the bottom, it would trigger another set of API calls to retreive more results
       ![](https://i.imgur.com/Z8W6lPI.png)
+- [ ] When searching/scrolling too frequently and being blocked by the API rate limit, display a count down and retry button for the user to manually see the results again
+      ![](https://i.imgur.com/CRs1vG1.png)
 
 # Implementation
 

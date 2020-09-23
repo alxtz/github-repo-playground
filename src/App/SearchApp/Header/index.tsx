@@ -62,6 +62,7 @@ export default function Header() {
           onChange={e => setSearchText(e.target.value)}
           id="search"
           placeholder="Search or jump to..."
+          data-test-id="search-input"
         />
         {searchText !== "" && (
           <SearchImg
@@ -72,7 +73,11 @@ export default function Header() {
             }}
           />
         )}
-        <QuickResults htmlFor="search" show={searchText !== ""}>
+        <QuickResults
+          htmlFor="search"
+          show={searchText !== ""}
+          data-test-id="quick-results"
+        >
           {searchLoading ? (
             <LoadingContainer>
               <LoadingImg src={loadingSvg} />
