@@ -30,3 +30,4 @@
 - src/store for all the state management related
 - cypress for basic E2E testing setup
   ![](https://i.imgur.com/o7jDMym.png)
+  ![](https://i.imgur.com/wjSKjpr.png)
