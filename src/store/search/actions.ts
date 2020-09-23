@@ -3,7 +3,7 @@ import { ActionTypes, SEARCH_ACTIONS } from "./types";
 
 const URL = "https://api.github.com/search/repositories?page=1&per_page=10&q=";
 
-export const searchWithKeyword = keyword => (
+export const searchWithKeyword = (keyword: string) => (
   dispatch: Dispatch<ActionTypes>
 ) => {
   dispatch({
@@ -38,7 +38,7 @@ export const searchWithKeyword = keyword => (
     });
 };
 
-export const searchForMoreResults = keyword => (
+export const searchForMoreResults = () => (
   dispatch: Dispatch<ActionTypes>,
   getState: GetState
 ) => {

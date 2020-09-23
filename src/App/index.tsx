@@ -2,7 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 
 import store from "~/store/store";
-import Main from "~/components/Main";
+import SearchApp from "./SearchApp";
 
 import GlobalStyles from "./GlobalStyles";
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <GlobalStyles />
       <Provider store={store}>
-        <Main />
+        <SearchApp />
       </Provider>
     </>
   );

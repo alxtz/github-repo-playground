@@ -1,5 +1,5 @@
 import { Reducer } from "redux";
-import { ActionTypes, SEARCH_ACTIONS } from "./types";
+import { ActionTypes, SEARCH_ACTIONS, Result } from "./types";
 
 const initialState: State = {
   isSearching: false,
@@ -10,7 +10,7 @@ const initialState: State = {
 };
 
 type State = {
-  searchResults: string[] | null;
+  searchResults: Result[] | null;
   isSearching: boolean;
   currentResultPage: number;
   cachedKeyword: string;
@@ -39,9 +39,10 @@ export const search: Reducer<State, ActionTypes> = (
     }
 
     case SEARCH_ACTIONS.APPEND_SEARCH_RESULTS: {
+      const oldResults = state.searchResults || [];
       return {
         ...state,
-        searchResults: [...state.searchResults, ...action.results],
+        searchResults: [...oldResults, ...action.results],
         currentResultPage: state.currentResultPage + 1
       };
     }

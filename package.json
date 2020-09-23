@@ -5,6 +5,7 @@
   "author": "Alex Tzeng <alxtz.tw@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "yarn dev",
     "dev": "webpack-dev-server --config webpack.config.js",
     "tsc/dev": "tsc --noEmit --watch",
     "cypress": "cypress run --config video=false",

@@ -6,9 +6,19 @@ export enum SEARCH_ACTIONS {
   SET_API_ERROR = "SET_API_ERROR"
 }
 
+export type Result = {
+  name: string;
+  id: string;
+  owner: {
+    login: string;
+  };
+  description: string;
+};
+
 type SetSearchResults = {
   type: typeof SEARCH_ACTIONS.SET_SEARCH_RESULTS;
-  results: string[];
+  results: Result[];
+  keyword: string;
 };
 
 type SetIsSearching = {
@@ -18,7 +28,7 @@ type SetIsSearching = {
 
 type AppendSearchResults = {
   type: typeof SEARCH_ACTIONS.APPEND_SEARCH_RESULTS;
-  results: string[];
+  results: Result[];
 };
 
 type ClearSearchResults = {
