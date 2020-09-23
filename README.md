@@ -7,16 +7,16 @@
 
 # Test Cases
 
-- [ ] When entering new characters in the search input, there should be a dropdown that's showing
+- [x] When entering new characters in the search input, there should be a dropdown that's showing
       ![](https://i.imgur.com/z8HqgEi.png)
-- [ ] When the user hasn't been entering new characters for 1500ms (prevent frequent API calls, debouncing), call API to suggest keywords to be used
-- [ ] When clicking on any of the suggestions, use that keyword to search and render the infinite scroll view
+- [x] When the user hasn't been entering new characters for 1500ms (prevent frequent API calls, debouncing), call API to suggest keywords to be used
+- [x] When clicking on any of the suggestions, use that keyword to search and render the infinite scroll view
       ![](https://i.imgur.com/2axE6ti.png)
-- [ ] When manually clicking the search icon, use the current input to search and render the infinite scroll view
+- [x] When manually clicking the search icon, use the current input to search and render the infinite scroll view
       ![](https://i.imgur.com/6xY27mM.png)
-- [ ] The initial search would render the first 10 items of the collection, each time scrolling to the bottom, it would trigger another set of API calls to retreive more results
+- [x] The initial search would render the first 10 items of the collection, each time scrolling to the bottom, it would trigger another set of API calls to retreive more results
       ![](https://i.imgur.com/Z8W6lPI.png)
-- [ ] When searching/scrolling too frequently and being blocked by the API rate limit, display a count down and retry button for the user to manually see the results again
+- [x] When searching/scrolling too frequently and being blocked by the API rate limit, display a count down and retry button for the user to manually see the results again
       ![](https://i.imgur.com/CRs1vG1.png)
 
 # Implementation
